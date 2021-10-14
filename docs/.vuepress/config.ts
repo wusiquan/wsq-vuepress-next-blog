@@ -35,6 +35,10 @@ export default defineUserConfig<DefaultThemeOptions>({
 
     sidebar,
 
+    // themePlugins: {
+    //   backToTop: false
+    // },
+
     // page meta
     editLinkText: '在 GitHub 上编辑此页',
   },
@@ -45,5 +49,9 @@ export default defineUserConfig<DefaultThemeOptions>({
   // https://v2.vuepress.vuejs.org/reference/bundler/webpack.html#options
   bundlerConfig: {
     evergreen: true
-  }
+  },
+
+  plugins: [
+    // "@vuepress/debug"
+  ]
 })
