@@ -1,0 +1,35 @@
+<template>
+  <div class="demo-block">
+    <div class="source">
+      <slot></slot>
+    </div>
+  </div>
+</template>
+
+<script>
+import { defineComponent } from 'vue'
+export default defineComponent({
+  name: 'DemoBlock',
+  
+  props: {
+    sourceCode: String
+  },
+
+  created() {
+    // console.log(123, this.sourceCode)
+  }
+})
+</script>
+
+<style scoped>
+.demo-block {
+  margin: 10px 0;
+}
+.demo-block .source {
+  border: solid 1px #ebebeb;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 24px;
+  transition: .2s;
+}
+</style>

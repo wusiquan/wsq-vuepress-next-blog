@@ -1,19 +1,47 @@
 import type { SidebarConfig } from '@vuepress/theme-default'
 
 export const sidebar: SidebarConfig = {
-  '/posts/vuepress-next': [
+  '/test': [
     {
-      text: 'vuepress-next分析',
+      text: '测试',
       children: [
-        'README.md',
-        'theme加载流程.md',
-        'layout做什么的.md',
-        'plugin机制.md',
-        // 感觉可以通过frontter? 来给个标签
-        'sidebar不展示.md',
-        '尝试禁用某个插件.md',
-        'clientAppRootComponentFiles钩子插件分析.md'
+        'README.md'
       ]
     }
   ]
+
+  // '/posts/vuepress-next': [
+  //   {
+  //     text: 'vuepress-next分析',
+  //     children: [
+  //       'README.md',
+  //       'theme加载流程.md',
+  //       'layout做什么的.md',
+  //       'plugin机制.md',
+  //       // 感觉可以通过frontter? 来给个标签
+  //       'sidebar不展示.md',
+  //       '尝试禁用某个插件.md',
+  //       'clientAppRootComponentFiles钩子插件分析.md'
+  //     ]
+  //   }
+  // ],
+
+  // '/posts/typescript': [
+  //   {
+  //     text: 'typescript分析',
+  //     children: [
+  //       'README.md',
+  //       'shiki里看到编辑器提示.md'
+  //     ]
+  //   }
+  // ],
+
+  // '/posts/markdown-it': [
+  //   {
+  //     text: 'markdown-it分析',
+  //     children: [
+  //       'README.md'
+  //     ]
+  //   }
+  // ]
 }
