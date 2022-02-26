@@ -21,7 +21,7 @@ cli/src/commands/dev/createDev.ts中调用`createDevApp`方法
   source: '/Users/wusiquan/Desktop/siquangit/wsq-vuepress-next-blog/docs'
 }
 ```
-它会调用`createBaseApp`方法，将config传递过去，
+它会调用`createBaseApp`方法，将config传递过去，
 首先会createAppOptions(config)，返回app级options，这里能看出很多默认值
 ```typescript
 export const createAppOptions = ({
