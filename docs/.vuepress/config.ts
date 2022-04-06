@@ -6,15 +6,16 @@ import { sidebar } from './configs'
 export default defineUserConfig<DefaultThemeOptions>({
   base: '/',
   head: [
-    [
-      'link',
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '32x32',
-        href: `/favicon.ico`
-      }
-    ],
+    // 加了好像多请求了一下
+    // [
+    //   'link',
+    //   {
+    //     rel: 'icon',
+    //     type: 'image/png',
+    //     sizes: '32x32',
+    //     href: `/favicon.ico`
+    //   }
+    // ],
     [ 'meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' } ]
   ],
 
@@ -46,9 +47,12 @@ export default defineUserConfig<DefaultThemeOptions>({
   alias: {
     '@assets': path.resolve(__dirname, './assets')
   },
+
   // https://v2.vuepress.vuejs.org/reference/bundler/webpack.html#options
   bundlerConfig: {
-    evergreen: true
+    // evergreen: true
+    // 发现不加这个请求一些js文件会504 GateWay Timeout
+    force: true
   },
 
   plugins: [
