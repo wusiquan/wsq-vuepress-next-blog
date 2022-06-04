@@ -1,5 +1,7 @@
 ### 测试目录下的README.md
 
+theme-default代码是copy 2.0.0-beta.46版本
+
 aaa
 
 ::: demo

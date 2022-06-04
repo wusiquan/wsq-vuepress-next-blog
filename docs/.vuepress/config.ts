@@ -1,10 +1,11 @@
 import path from 'path'
+import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from '@vuepress/cli'
-import type { DefaultThemeOptions } from '@vuepress/theme-default'
+import { defaultTheme } from '../../theme-default'
 import { sidebar } from './configs'
-import emoji from 'markdown-it-emoji'
+// import emoji from 'markdown-it-emoji'
 
-export default defineUserConfig<DefaultThemeOptions>({
+export default defineUserConfig({
   base: '/',
   head: [
     [
@@ -19,7 +20,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     [ 'meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' } ]
   ],
 
-  themeConfig: {
+  theme: defaultTheme({
     docsDir: '.',
     
     navbar: [
@@ -47,45 +48,47 @@ export default defineUserConfig<DefaultThemeOptions>({
 
     // page meta
     editLinkText: '在 GitHub 上编辑此页',
-  },
+  }),
 
   alias: {
     '@assets': path.resolve(__dirname, './assets')
   },
   // https://v2.vuepress.vuejs.org/reference/bundler/webpack.html#options
-  bundlerConfig: {
-    evergreen: true
-  },
+  // https://v2.vuepress.vuejs.org/reference/bundler/vite.html#viteoptions
+  bundler: viteBundler({
+    viteOptions: {},
+    vuePluginOptions: {}
+  }),
 
   plugins: [
-    [ '@vuepress/plugin-shiki', { theme: 'dracula-soft' } ],
+    // [ '@vuepress/plugin-shiki', { theme: 'dracula-soft' } ],
     // [ require('./plugins/demoblock'), {} ]
   ],
 
-  extendsMarkdown: (md) => {
-    md.use(emoji)
-    /*
-        https://github.com/markdown-it/markdown-it-container的示例
-        :::spoiler click me
-        *content*
-        :::
-     */
-    md.use(require('markdown-it-container'), 'spoiler', {
-      validate: function(params) {
-        return params.trim().match(/^spoiler\s+(.*)$/)
-      },
+  // extendsMarkdown: (md) => {
+  //   md.use(emoji)
+  //   /*
+  //       https://github.com/markdown-it/markdown-it-container的示例
+  //       :::spoiler click me
+  //       *content*
+  //       :::
+  //    */
+  //   md.use(require('markdown-it-container'), 'spoiler', {
+  //     validate: function(params) {
+  //       return params.trim().match(/^spoiler\s+(.*)$/)
+  //     },
     
-      render: function (tokens, idx) {
-        var m = tokens[idx].info.trim().match(/^spoiler\s+(.*)$/)
+  //     render: function (tokens, idx) {
+  //       var m = tokens[idx].info.trim().match(/^spoiler\s+(.*)$/)
     
-        if (tokens[idx].nesting === 1) {
-          // opening tag
-          return '<details><summary>' + md.utils.escapeHtml(m[1]) + '</summary>\n'
-        } else {
-          // closing tag
-          return '</details>\n'
-        }
-      }
-    })
-  }
+  //       if (tokens[idx].nesting === 1) {
+  //         // opening tag
+  //         return '<details><summary>' + md.utils.escapeHtml(m[1]) + '</summary>\n'
+  //       } else {
+  //         // closing tag
+  //         return '</details>\n'
+  //       }
+  //     }
+  //   })
+  // }
 })

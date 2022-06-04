@@ -1,0 +1,26 @@
+{
+  "name": "theme-default",
+  "version": "2.0.0-beta.46",
+  "description": "Default theme of VuePress",
+  "keywords": [
+    "vuepress-theme",
+    "vuepress",
+    "theme",
+    "default"
+  ],
+  "license": "MIT",
+  "author": "wsqviva",
+  "main": "lib/node/index.js",
+  "types": "lib/node/index.d.ts",
+  "scripts": {
+    "build": "tsc -b tsconfig.build.json",
+    "clean": "rimraf lib *.tsbuildinfo",
+    "copy": "cpx \"src/**/*.{d.ts,vue,scss}\" lib"
+  },
+  "devDependencies": {
+    "cpx2": "^4.2.0",
+    "rimraf": "^3.0.2",
+    "tsconfig-vuepress": "^0.2.1",
+    "typescript": "^4.7.3"
+  }
+}
