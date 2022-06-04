@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "docs:dev": "DEBUG=vuepress:core/app vuepress dev docs",
+    "docs:dev": "DEBUG=vuepress:core/app vuepress dev docs --clean-cache",
     "docs:build": "vuepress build docs",
     "clean": "rimraf docs/.vuepress/.cache docs/.vuepress/.temp"
   },
