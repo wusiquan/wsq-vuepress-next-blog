@@ -3,6 +3,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from '@vuepress/cli'
 import { defaultTheme } from '../../theme-default'
 import { sidebar } from './configs'
+import { shikiPlugin } from '@vuepress/plugin-shiki'
 // import emoji from 'markdown-it-emoji'
 
 export default defineUserConfig({
@@ -24,15 +25,15 @@ export default defineUserConfig({
     docsDir: '.',
     
     navbar: [
-      // {
-      //   text: 'vuepress-next',
-      //   link: '/posts/vuepress-next/'
-      //   // ariaLabel: '导航',
-      //   // children: [
-      //   //   { text: '测试', link: '/posts/vuepress-next/' },
-      //   //   { text: 'vuepress-next', link: '/posts/vuepress-next/vuepress2%E7%9A%84Layout' }
-      //   // ]
-      // },
+      {
+        text: 'vuepress-next',
+        link: '/posts/vuepress-next/'
+        // ariaLabel: '导航',
+        // children: [
+        //   { text: '测试', link: '/posts/vuepress-next/' },
+        //   { text: 'vuepress-next', link: '/posts/vuepress-next/vuepress2%E7%9A%84Layout' }
+        // ]
+      },
       {
         text: 'test',
         link: '/test'
@@ -61,6 +62,9 @@ export default defineUserConfig({
   }),
 
   plugins: [
+    shikiPlugin({
+      theme: 'dracula-soft'
+    })
     // [ '@vuepress/plugin-shiki', { theme: 'dracula-soft' } ],
     // [ require('./plugins/demoblock'), {} ]
   ],
