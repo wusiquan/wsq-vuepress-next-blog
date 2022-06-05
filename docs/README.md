@@ -25,3 +25,6 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
 ### As Easy as 1, 2, 3
+
+https://github.com/vuepress-reco/vuepress-theme-reco
+https://github.com/Renovamen/vuepress-theme-gungnir
