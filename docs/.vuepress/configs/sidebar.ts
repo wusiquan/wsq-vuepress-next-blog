@@ -27,6 +27,28 @@ export const sidebar: SidebarConfig = {
     }
   ],
 
+  '/posts/eslint': [
+    {
+      text: 'eslint分析',
+      children: [
+        'README.md',
+        'eslint中的eslint:all',
+        '插件vue配置的configs'
+      ]
+    }
+  ],
+
+  '/posts/miniprogram': [
+    {
+      text: '小程序开发',
+      children: [
+        'README.md',
+        '分享场景',
+        '性能优化-getSystemInfoSync'
+      ]
+    }
+  ]
+
   // '/posts/typescript': [
   //   {
   //     text: 'typescript分析',

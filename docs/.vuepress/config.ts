@@ -35,8 +35,12 @@ export default defineUserConfig({
         // ]
       },
       {
-        text: 'test',
-        link: '/test'
+        text: 'eslint',
+        link: '/posts/eslint/'
+      },
+      {
+        text: '小程序开发',
+        link: '/posts/miniprogram/'
       }
     ],
 
