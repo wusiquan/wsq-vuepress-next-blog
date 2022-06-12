@@ -6,7 +6,7 @@
   "scripts": {
     "docs:dev": "DEBUG=vuepress:core/app vuepress dev docs --clean-cache",
     "docs:build": "vuepress build docs",
-    "theme-default:build": "cd theme-default yarn build && cd -", 
+    "theme-default:build": "cd theme-default && yarn clean && yarn build && yarn copy && cd -", 
     "clean": "rimraf docs/.vuepress/.cache docs/.vuepress/.temp"
   },
   "devDependencies": {
