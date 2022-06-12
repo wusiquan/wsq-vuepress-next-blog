@@ -1,7 +1,7 @@
 /**
  * Base nav item, displayed as text
  */
- export interface NavItem {
+export interface NavItem {
   text: string
   ariaLabel?: string
 }

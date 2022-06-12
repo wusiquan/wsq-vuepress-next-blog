@@ -6,7 +6,7 @@ import HomeHero from '@theme/HomeHero.vue'
 </script>
 
 <template>
-  <main class="home1">
+  <main class="home">
     <HomeHero />
     <HomeFeatures />
     <HomeContent />
