@@ -7,7 +7,7 @@ import { shikiPlugin } from '@vuepress/plugin-shiki'
 // import emoji from 'markdown-it-emoji'
 
 export default defineUserConfig({
-  base: '/',
+  base: '/wsq-vuepress-next-blog/',
   head: [
     [
       'link',
