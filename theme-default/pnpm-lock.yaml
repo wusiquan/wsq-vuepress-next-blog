@@ -4,13 +4,13 @@ specifiers:
   cpx2: ^4.2.0
   rimraf: ^3.0.2
   tsconfig-vuepress: ^0.2.1
-  typescript: ^4.7.3
+  typescript: ^4.8.0-dev.20220615
 
 devDependencies:
   cpx2: 4.2.0
   rimraf: 3.0.2
   tsconfig-vuepress: 0.2.1
-  typescript: 4.7.3
+  typescript: 4.8.0-dev.20220615
 
 packages:
 
@@ -255,7 +255,7 @@ packages:
     dev: true
 
   /subarg/1.0.0:
-    resolution: {integrity: sha1-9izxdYHplrSPyWVpn1TAauJouNI=}
+    resolution: {integrity: sha512-RIrIdRY0X1xojthNcVtgT9sjpOGagEUKpZdgBUi054OEPFo282yg+zE+t1Rj3+RqKq2xStL7uUHhY+AjbC4BXg==}
     dependencies:
       minimist: 1.2.6
     dev: true
@@ -269,8 +269,8 @@ packages:
     resolution: {integrity: sha512-zGsiz0hB+Q1vdNE7HJw5otYYaQ8Z3IxIj5G/Fo9SgzAbHfO/8pHMDNrNWwhtr8+UgJb6TT+sa64HTkMhAbXCBg==}
     dev: true
 
-  /typescript/4.7.3:
-    resolution: {integrity: sha512-WOkT3XYvrpXx4vMMqlD+8R8R37fZkjyLGlxavMc4iB8lrl8L0DeTcHbYgw/v0N/z9wAFsgBhcsF0ruoySS22mA==}
+  /typescript/4.8.0-dev.20220615:
+    resolution: {integrity: sha512-Is/gGrlFdQdT4GA/FEz4tMnDy78lNVxCxtZule9Xv5LRSwLgbgLwJQBMqpLWXd/KJO6u66F2EFmfXU1g3MCVZA==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
@@ -281,10 +281,10 @@ packages:
     dev: true
 
   /util.inherits/1.0.3:
-    resolution: {integrity: sha1-qcYmoNBtNIKdR7pWyrEnjXRfnOY=}
+    resolution: {integrity: sha512-gMirHcfcq5D87nXDwbZqf5vl65S0mpMZBsHXJsXOO3Hc3G+JoQLwgaJa1h+PL7h3WhocnuLqoe8CuvMlztkyCA==}
     engines: {node: '>=4'}
     dev: true
 
   /wrappy/1.0.2:
-    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
+    resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
     dev: true
