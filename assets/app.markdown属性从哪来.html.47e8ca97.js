@@ -1,0 +1,1 @@
+import{_,o as e,c as r}from"./app.08d597d0.js";const a={};function c(o,t){return e(),r("div")}var m=_(a,[["render",c],["__file","app.markdown\u5C5E\u6027\u4ECE\u54EA\u6765.html.vue"]]);export{m as default};

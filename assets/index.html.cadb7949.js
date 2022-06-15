@@ -1,0 +1,1 @@
+import{_ as t,o as a,c as n,a as e,b as r}from"./app.08d597d0.js";const c={},o=e("h1",{id:"vue-next\u5206\u6790",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#vue-next\u5206\u6790","aria-hidden":"true"},"#"),r(" vue-next\u5206\u6790")],-1),s=[o];function _(d,i){return a(),n("div",null,s)}var l=t(c,[["render",_],["__file","index.html.vue"]]);export{l as default};

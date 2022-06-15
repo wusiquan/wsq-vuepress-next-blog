@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-29600726","path":"/posts/vue-next/Proxy%E5%AD%A6%E4%B9%A0.html","title":"Proxy\u5B66\u4E60","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1654438241000,"contributors":[{"name":"wusiquan","email":"1781554387@qq.com","commits":1}]},"filePathRelative":"posts/vue-next/Proxy\u5B66\u4E60.md"}');export{t as data};

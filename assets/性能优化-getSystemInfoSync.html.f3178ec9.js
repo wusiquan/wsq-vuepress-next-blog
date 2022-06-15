@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as _}from"./app.08d597d0.js";const c={};function n(o,r){return t(),_("div")}var a=e(c,[["render",n],["__file","\u6027\u80FD\u4F18\u5316-getSystemInfoSync.html.vue"]]);export{a as default};

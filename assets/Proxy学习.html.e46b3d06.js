@@ -1,0 +1,1 @@
+import{_ as r,o as a,c as o,a as e,b as t}from"./app.08d597d0.js";const c={},_=e("h1",{id:"proxy\u5B66\u4E60",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#proxy\u5B66\u4E60","aria-hidden":"true"},"#"),t(" Proxy\u5B66\u4E60")],-1),s=[_];function n(d,i){return a(),o("div",null,s)}var l=r(c,[["render",n],["__file","Proxy\u5B66\u4E60.html.vue"]]);export{l as default};
