@@ -44,7 +44,8 @@ export const sidebar: SidebarConfig = {
       children: [
         'README.md',
         '分享场景',
-        '性能优化-getSystemInfoSync'
+        '性能优化-getSystemInfoSync',
+        '易出问题-pageLifetimes'
       ]
     }
   ]

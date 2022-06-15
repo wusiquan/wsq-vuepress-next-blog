@@ -1,0 +1,21 @@
+# pageLifetimes生命周期
+
+组件里的pageLifetimes可以监听到页面的onShow回调
+
+有一个组件一直打印不到show中的回调，而另一处却可以
+
+后来我发现分享hide执行，取消分享show执行了，才有些思路
+其中组件show的执行顺序在组件的onShow之前，
+
+那么对某些写法，就会错过组件show的时机
+
+
+而另一种写法，却可以第一次直接监听到show
+
+
+所以在使用pageLifetimes时要小心这一点，解决方式也是多种多样，比如换attch或ready生命周期是否满足需求，比如show中的逻辑在attch或ready生命周期里再写一遍，再比如换上面写法
+
+
+百度、支付宝小程序也是支持pageLifetimes
+头条小程序高版本开始逐渐支持pageLifetimes
+
